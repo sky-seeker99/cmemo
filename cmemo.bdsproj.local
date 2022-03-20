@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008/09/19 18:32:35.000.cpp,C:\Documents and Settings\kasuya99\My Documents\Borland Studio Projects\Unit1.cpp=C:\hpdata\csvpp_source_tc\cmemo\_cmemo.cpp</Transaction>
+    <Transaction>2008/09/19 18:32:35.000.h,C:\Documents and Settings\kasuya99\My Documents\Borland Studio Projects\Unit1.h=C:\hpdata\csvpp_source_tc\cmemo\_cmemo.h</Transaction>
+    <Transaction>2008/09/19 18:32:35.000.dfm,C:\Documents and Settings\kasuya99\My Documents\Borland Studio Projects\Unit1.dfm=C:\hpdata\csvpp_source_tc\cmemo\_cmemo.dfm</Transaction>
+    <Transaction>2008/09/19 18:32:43.796.bdsproj,C:\Documents and Settings\kasuya99\My Documents\Borland Studio Projects\Project1.bdsproj=C:\hpdata\csvpp_source_tc\cmemo\cmemo.bdsproj</Transaction>
+    <Transaction>2010/07/11 14:52:00.125.lib,C:\hpdata\csvpp_source_tc\csvpp_xbase\Release_Build\xbase.lib=</Transaction>
+    <Transaction>2011/02/04 18:36:45.953.cpp,C:\hpdata\csvpp_source_tc\csvpp_xbase\zfile.cpp=</Transaction>
+    <Transaction>2022/03/20 15:11:20.338.cpp,E:\gitwork\cmemo\csvpp_xbase\xkanji.cpp=</Transaction>
+  </Transactions>
+</BorlandProject>
