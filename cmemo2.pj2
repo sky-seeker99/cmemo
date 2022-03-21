@@ -1,11 +1,11 @@
 [Project]
 ProjectName=choi memo II
-CreateFileName=choi_memo2_100
+CreateFileName=choi_memo2_099
 CreateFolder=E:\gitwork\cmemo
 MajorVersion=4
 MinorVersion=60
 CreateDateTime=2004/02/12 17:01:10
-UpdateDateTime=2022/03/21 18:06:11
+UpdateDateTime=2022/03/21 19:16:25
 Generator=EINSTALL 2.0
 CreateFileType=4
 CreateFileAddVersionInfo=0
@@ -47,7 +47,7 @@ ReleaseVersion=1
 BuildVersion=0
 OtherVersion=0
 DocumentFile=readme_cmemo2.txt
-LicenseFile=COPYING
+LicenseFile=%InstallDir%\LICENSE
 AlwaysAgree=0
 LogoPosition=0|0|0||||||||||||||||||
 LogoSize=0|0|0||||||||||||||||||
@@ -133,15 +133,15 @@ InfoFileMethod=0
 [FilesSetting]
 ExcludeCommonComponent=0
 
-[ShortCutItems]
-0=COPYING|%InstallDir%\COPYING||||0||0|2|0|||||||||||
-1=cmemo2_manual|%InstallDir%\cmemo2_manual.txt||||0||0|2|0|||||||||||
-2=cmemo2|%InstallDir%\cmemo.exe||||0||0|3|0|||||||||||
-3=cmemo2|%InstallDir%\cmemo.exe||||0||0|2|0|||||||||||
-
 [Files]
-0=1|0|%InstallDir%||E:\gitwork\cmemo\COPYING|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
-1=1|0|%InstallDir%||E:\gitwork\cmemo\cmemo2_manual.txt|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
-2=1|0|%InstallDir%||E:\gitwork\cmemo\Release_Build\cmemo.exe|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
-3=1|0|%WindowsDirectory%||E:\gitwork\cmemo\Release_Build\cmemo_remote.exe|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
+0=1|0|%InstallDir%||E:\gitwork\cmemo\cmemo2_manual.txt|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
+1=1|0|%InstallDir%||E:\gitwork\cmemo\Release_Build\cmemo.exe|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
+2=1|0|%WindowsDirectory%||E:\gitwork\cmemo\Release_Build\cmemo_remote.exe|||0|0|255|0,0,0,0,,,,,,,,,,,,,,,,,|0,0,,,,,,,,,,,,,,,,,,,|||||||||
+3=1|0|%InstallDir%||E:\gitwork\cmemo\LICENSE|||0|0|255|0,0,0,0,0,0,0,0,0,,,,,,,,,,,,|0,0,HKEY_CURRENT_USER,,,,0,,,0,,,,,,,,,,,|||||||||
+
+[ShortCutItems]
+0=cmemo2_manual|%InstallDir%\cmemo2_manual.txt||||0||0|2|0|||||||||||
+1=cmemo2|%InstallDir%\cmemo.exe||||0||0|3|0|||||||||||
+2=cmemo2|%InstallDir%\cmemo.exe||||0||0|2|0|||||||||||
+3=LICENSE|%InstallDir%\LICENSE||||0||0|2|0|255|0,0,0,0,0,0,0,0,0,,,,,,,,,,,,|||||||||
 
