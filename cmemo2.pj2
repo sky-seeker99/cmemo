@@ -5,7 +5,7 @@ CreateFolder=E:\gitwork\cmemo
 MajorVersion=4
 MinorVersion=60
 CreateDateTime=2004/02/12 17:01:10
-UpdateDateTime=2022/03/21 17:59:47
+UpdateDateTime=2022/03/21 18:06:11
 Generator=EINSTALL 2.0
 CreateFileType=4
 CreateFileAddVersionInfo=0
@@ -102,7 +102,7 @@ ProductType=0
 
 [ScreenSetting]
 Panel01=1
-Panel02=1
+Panel02=0
 Panel03=1
 Panel04=1
 Panel05=1
