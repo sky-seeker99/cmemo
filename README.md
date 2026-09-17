@@ -23,7 +23,7 @@
 
 ## 動作環境
 
-- Windows(対応バージョンは要確認・追記をおすすめします)
+- Windows 10/11
 - C++Builder(Borland Developer Studio)でビルドされたプロジェクトです
 
 ## インストール方法
@@ -38,8 +38,6 @@
 3. `cmemo.exe` を実行
 -->
 
-現時点ではソースコードからのビルドが必要です。手順は下記「ビルド方法」をご覧ください。
-
 ## 使い方
 
 1. アプリを起動すると、タスクトレイにアイコンが常駐します
@@ -47,23 +45,6 @@
 3. 内容を入力し、もう一度アイコンを左クリックすると閉じます
 4. 入力した内容はプログラム終了時に自動で保存され、次回起動時に復元されます
 5. 複数のメモを切り替えて管理できます
-
-## ビルド方法
-
-<!--
-実際のビルド手順(必要なIDE・SDKのバージョンなど)を追記してください。
-例:
-1. C++Builder(Borland Developer Studio)をインストール
-2. 本リポジトリをクローン
-   git clone https://github.com/sky-seeker99/cmemo.git
-3. `cmemo.bdsproj` を開いてビルド
--->
-
-```bash
-git clone https://github.com/sky-seeker99/cmemo.git
-```
-
-C++Builder(Borland Developer Studio)で `cmemo.bdsproj` を開いてビルドしてください。
 
 ## ライセンス
 
