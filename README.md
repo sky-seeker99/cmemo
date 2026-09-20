@@ -2,8 +2,6 @@
 <!-- It runs in the system tray, supports multiple memos, drag and drop, automatic saving, and remote control. -->
 <!-- Windows向けの軽量なメモ帳「cmemo（ちょいメモⅡ）」。タスクトレイに常駐し、複数のメモを管理できる無料のオープンソース・メモアプリです。 -->
 
-# cmemo
-
 # <img width="290" height="94" alt="cmemo2-2_s" src="https://github.com/user-attachments/assets/6d105a97-e91b-4164-a0f2-ea21d2987ee7" />
 
 **Windowsのタスクトレイに常駐して使える、軽量なメモ帳です。**
