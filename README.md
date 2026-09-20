@@ -1,70 +1,222 @@
 # cmemo
 
-![License](https://img.shields.io/badge/license-GPL--2.0-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
-![Language](https://img.shields.io/badge/language-C%2B%2B-orange.svg)
+**Windowsのタスクトレイに常駐して使える、軽量なメモ帳です。**
 
-**タスクトレイに常駐する、軽量なメモ帳アプリです。**
-
-ちょっとしたメモを取りたいときに、デスクトップを圧迫せずサッと開いて書き込める。そんな「もう一枚の付箋」感覚で使えるWindows向けメモツールです。
-
-<!--
-ここにスクリーンショットまたはGIFアニメーションを挿入すると効果的です。
-例: ![screenshot](docs/screenshot.png)
-実際の画面(タスクトレイアイコン、メモ画面など)を撮って追加してください。
--->
+ちょっとしたメモを取りたいときに、デスクトップを圧迫せず、必要なときにすぐ呼び出して使えます。
+「もう一枚の付箋」のような感覚で利用できる、シンプルなメモツールです。
 
 ## 特徴
 
-- 🗂️ **タスクトレイに常駐** — 邪魔にならず、必要なときだけすぐ呼び出せます
-- 🖱️ **ワンクリックで開閉** — タスクトレイアイコンを左クリックでメモ帳を表示、もう一度左クリックで閉じます
-- 💾 **自動保存** — プログラム終了時に内容が自動でファイルに保存されるので、次回起動時も同じ内容から編集を再開できます
-- 📝 **複数メモの管理** — 用途ごとに複数のメモを作成・管理できます
+- 🗂️ **タスクトレイに常駐**
+  - 普段はタスクトレイに収納しておき、必要なときだけ呼び出せます。
+- 🖱️ **左クリックで開閉**
+  - タスクトレイのアイコンを左クリックするとメモが開き、もう一度左クリックするとタスクトレイに戻ります。
+- 💾 **自動保存**
+  - プログラム終了時にメモの内容をファイルへ保存します。
+  - 次回起動時には、前回の内容を引き続き編集できます。
+- 📝 **複数のメモを管理**
+  - 複数のメモを作成し、用途ごとに切り替えて使用できます。
+- 📁 **ファイル名の取得**
+  - ファイルをメモへドラッグ＆ドロップすると、ファイル名をメモに入力できます。
+- ⚙️ **各種設定**
+  - メモリストやメモの背景色・フォント、常に最前面に表示する設定などを変更できます。
+- 💻 **リモート操作**
+  - 付属の `cmemo_remote.exe` を使用して、外部プログラムからメモの表示・保存・読み出しなどを操作できます。
 
 ## 動作環境
 
-- Windows 10/11
-- C++Builder(Borland Developer Studio)でビルドされたプロジェクトです
+- Windows 10 / 11
+- C++Builder（Borland Developer Studio）でビルドされたプロジェクト
 
-## インストール方法
+## インストール
 
-<!--
-ビルド済み実行ファイル(.exe)をGitHub Releasesで配布すると、
-ソースをビルドできない一般ユーザーにも届きやすくなります。
-配布後、以下のような案内に差し替えてください。
+現在のリポジトリには、ソースコードとプロジェクトファイルが含まれています。
 
-1. [Releases](../../releases) から最新版をダウンロード
-2. 任意のフォルダに展開
-3. `cmemo.exe` を実行
--->
+実行ファイルを使用する場合は、利用可能なリリースや配布ファイルをご確認ください。
 
-## 使い方
+## 基本的な使い方
 
-1. アプリを起動すると、タスクトレイにアイコンが常駐します
-2. アイコンを左クリックするとメモ帳が開きます
-3. 内容を入力し、もう一度アイコンを左クリックすると閉じます
-4. 入力した内容はプログラム終了時に自動で保存され、次回起動時に復元されます
-5. 複数のメモを切り替えて管理できます
+1. `cmemo` を起動します。
+2. タスクトレイにアイコンが表示されます。
+3. タスクトレイのアイコンを左クリックすると、メモが表示されます。
+4. メモを入力します。
+5. もう一度タスクトレイのアイコンを左クリックすると、メモがタスクトレイに戻ります。
+6. プログラムを終了すると、メモの内容がファイルに保存されます。
+7. 次回起動すると、保存されたメモの内容を引き続き使用できます。
+
+## メモの管理
+
+### メモの追加
+
+メモリスト上部の一行入力欄にメモ名を入力し、`[new]` ボタンを押します。
+
+また、メモリスト上で左クリックしてポップアップメニューを表示し、`[new]` を選択して追加することもできます。
+
+### メモの削除
+
+削除したいメモを選択し、`[del]` ボタンを押します。
+
+ポップアップメニューの `[del]` から削除することもできます。
+
+> **注意:** すべてのメモを削除することはできません。
+
+### メモ名の変更
+
+メモリスト上部の一行入力欄に変更後のメモ名を入力し、`[ren]` ボタンを押します。
+
+ポップアップメニューの `[rename]` から変更することもできます。
+
+### メモの並べ替え
+
+- `[↑]` ボタン：選択したメモを上へ移動
+- `[↓]` ボタン：選択したメモを下へ移動
+
+## メモのポップアップメニュー
+
+メモ上で左クリックすると、次のメニューを使用できます。
+
+| メニュー | 内容 |
+|---|---|
+| `[copy]` | 選択した文字をクリップボードにコピーします。 |
+| `[paste]` | クリップボードから文字を貼り付けます。 |
+| `[cut]` | 選択した文字をクリップボードにコピーし、選択した文字を削除します。 |
+| `[undo]` | 直前の修正を取り消します。 |
+| `[clear]` | メモの内容をすべて削除します。 |
+| `[return->crlf]` | CRのみで改行されている場合に、改行を正しい形式に変換します。 |
+| `[setting]` | 各種設定メニューを表示します。 |
+| `[all memo save]` | すべてのメモの内容をファイルに保存します。 |
+| `[all memo load]` | ファイルに保存したメモの内容を読み出します。 |
+| `[back color (list)]` | メモリストの背景色を設定します。 |
+| `[back color (memo)]` | メモの背景色を設定します。 |
+| `[font (list)]` | メモリストのフォントを設定します。 |
+| `[font (memo)]` | メモのフォントを設定します。 |
+| `[version]` | バージョンを表示します。 |
+
+### `[setting]` のサブメニュー
+
+| メニュー | 内容 |
+|---|---|
+| `[list]` | メモリストの表示／非表示を切り替えます。 |
+| `[on top stay]` | ウィンドウを常に最前面に表示するかどうかを設定します。 |
+| `[file name only]` | ファイルをドラッグ＆ドロップしたとき、フルパスを入力するか、ファイル名のみを入力するかを設定します。 |
+
+## タスクトレイのメニュー
+
+タスクトレイのアイコンを左クリックすると、次のメニューを使用できます。
+
+| メニュー | 内容 |
+|---|---|
+| `[Show]` | プログラムを表示します。 |
+| `[Exit]` | プログラムを終了します。 |
+
+## メモ上部のボタン
+
+| ボタン | 内容 |
+|---|---|
+| `[home]` | メモリストの一番上に移動します。メモリストは非表示になります。 |
+| `[list]` | メモリストの表示／非表示を切り替えます。 |
+| `[<<]` | メモリストの前のメモを表示します。 |
+| `[>>]` | メモリストの次のメモを表示します。 |
+
+## ファイル名の取得
+
+ファイルをメモへドラッグ＆ドロップすると、ファイル名がメモに入力されます。
+
+設定によって、フルパスまたはファイル名のみを入力できます。
+
+## リモート実行
+
+外部プログラムから `cmemo` を操作できます。
+
+付属のコンソールプログラム `cmemo_remote.exe` を使用します。
+
+### メモを表示
+
+```text
+cmemo_remote.exe メモ名 メッセージ
+```
+
+改行には `\n` を使用してください。
+
+例：
+
+```text
+cmemo_remote.exe memo1 時間ですよ!!
+cmemo_remote.exe memo1 "  時間ですよ!!\n お昼です。"
+```
+
+### メモをタスクトレイに閉じる
+
+```text
+cmemo_remote.exe -c
+```
+
+### すべてのメモをファイルに保存
+
+```text
+cmemo_remote.exe -s ファイル名
+```
+
+例：
+
+```text
+cmemo_remote.exe -s "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+```
+
+### ファイルからメモを読み出す
+
+```text
+cmemo_remote.exe -l ファイル名
+```
+
+例：
+
+```text
+cmemo_remote.exe -l "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+```
+
+## バージョン履歴
+
+| バージョン | 内容 |
+|---|---|
+| Ver 0.92 | 初公開 |
+| Ver 0.93 | デザイン変更 |
+| Ver 0.94 | メモの保存・読み出し機能を追加 |
+| Ver 0.95 | フォントと背景色の指定を、リストとメモそれぞれに分離。リストを閉じるボタンを追加 |
+| Ver 0.96 | デザイン変更。タスクバーに表示しないように変更。フォント設定、背景色設定のバグを修正 |
+| Ver 0.97 | メモにスクロールバーを追加 |
+| Ver 0.98 | `[<<]`、`[>>]` で移動した際に、現在のメモを保存し忘れるバグを修正 |
+| Ver 0.99 | `[home]` を追加 |
+| Ver 0.99a | インストーラーの圧縮方式を変更 |
 
 ## ライセンス
 
-このプロジェクトは [GPL-2.0 License](LICENSE) のもとで公開されています。
+このプロジェクトは **GPL-2.0 License** のもとで公開されています。
 
-## Contributing / Issues
+## Issues / Contributing
 
-バグ報告・機能要望・プルリクエストを歓迎します。[Issues](../../issues) からお気軽にご連絡ください。
+バグ報告、機能要望、改善提案などがありましたら、GitHubのIssuesをご利用ください。
 
 ---
 
 ## English
 
-**cmemo** is a lightweight memo pad that lives in your Windows task tray.
+### cmemo
 
-- Sits quietly in the task tray until you need it
-- Left-click the tray icon to open the memo pad, left-click again to close it
-- Notes are automatically saved to a file when the program exits, so you can pick up right where you left off
-- Manage and edit multiple memos at once
+**cmemo is a lightweight memo pad that lives in the Windows task tray.**
+
+It is designed for quickly writing small notes without taking up space on the desktop.
+
+### Features
+
+- 🗂️ Runs in the Windows task tray
+- 🖱️ Open and close the memo with a left click on the tray icon
+- 💾 Automatically saves memo contents when the program exits
+- 📝 Manage multiple memos
+- 📁 Get file names by dragging and dropping files onto a memo
+- ⚙️ Customize fonts, background colors, memo list visibility, and always-on-top behavior
+- 💻 Control cmemo from external programs with `cmemo_remote.exe`
 
 ### License
 
-Released under the [GPL-2.0 License](LICENSE).
+Released under the **GPL-2.0 License**.
