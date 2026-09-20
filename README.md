@@ -26,7 +26,6 @@
 ## 動作環境
 
 - Windows 10 / 11
-- C++Builder（Borland Developer Studio）でビルドされたプロジェクト
 
 ## インストール
 
