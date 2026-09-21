@@ -31,6 +31,10 @@
 
 - Windows 10 / 11
 
+## ダウンロード
+
+- https://github.com/sky-seeker99/cmemo/releases/download/ver0.99_20260920/choi_memo2_099.zip
+
 ## インストール
 
 現在のリポジトリには、ソースコードとプロジェクトファイルが含まれています。
