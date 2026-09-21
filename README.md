@@ -33,7 +33,7 @@
 
 ## ダウンロード
 
-- (choi_memo2_099.zip)[https://github.com/sky-seeker99/cmemo/releases/download/ver0.99_20260920/choi_memo2_099.zip]
+- [choi_memo2_099.zip](https://github.com/sky-seeker99/cmemo/releases/download/ver0.99_20260920/choi_memo2_099.zip)
 
 ## インストール
 
