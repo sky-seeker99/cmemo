@@ -4,6 +4,10 @@
 
 # <img width="290" height="94" alt="cmemo2-2_s" src="https://github.com/user-attachments/assets/6d105a97-e91b-4164-a0f2-ea21d2987ee7" />
 
+![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+![Language](https://img.shields.io/badge/language-C%2B%2B-orange.svg)
+
 **Windowsのタスクトレイに常駐して使える、軽量なメモ帳です。**
 
 ちょっとしたメモを取りたいときに、デスクトップを圧迫せず、必要なときにすぐ呼び出して使えます。
@@ -198,32 +202,9 @@ cmemo_remote.exe -l "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
 
 ## ライセンス
 
-このプロジェクトは **GPL-2.0 License** のもとで公開されています。
+このプロジェクトは **Apache License Version 2.0** のもとで公開されています。
 
 ## Issues / Contributing
 
 バグ報告、機能要望、改善提案などがありましたら、GitHubのIssuesをご利用ください。
 
----
-
-## English
-
-### cmemo
-
-**cmemo is a lightweight memo pad that lives in the Windows task tray.**
-
-It is designed for quickly writing small notes without taking up space on the desktop.
-
-### Features
-
-- 🗂️ Runs in the Windows task tray
-- 🖱️ Open and close the memo with a left click on the tray icon
-- 💾 Automatically saves memo contents when the program exits
-- 📝 Manage multiple memos
-- 📁 Get file names by dragging and dropping files onto a memo
-- ⚙️ Customize fonts, background colors, memo list visibility, and always-on-top behavior
-- 💻 Control cmemo from external programs with `cmemo_remote.exe`
-
-### License
-
-Released under the **GPL-2.0 License**.
