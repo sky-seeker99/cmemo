@@ -1,166 +1,166 @@
-# ちょいメモⅡ
+# Choi Memo II
 
-## 1. ソフトの紹介
+## 1. About the Program
 
-「ちょいメモⅡ」は、ちょっとしたメモを取りたいときなどに使用する、タスクトレイ常駐型のメモ帳です。
+Choi Memo II is a system tray memo pad for jotting down quick notes.
 
-- タスクトレイのアイコンを左クリックするとメモ帳が開き、もう一度左クリックすると閉じます。
-- メモの内容は、プログラム終了時にファイルへ保存されます。次回起動時には、前回の内容を引き続き編集できます。
-- 複数のメモを管理・編集できます。
+- Left-click the system tray icon to open the memo pad. Left-click again to minimize it to the tray.
+- Memo contents are saved to a file when the program exits. You can continue editing them the next time you start the program.
+- You can manage and edit multiple memos.
 
-## 2. 使用方法
+## 2. Usage
 
-プログラムを起動すると、「ちょいメモⅡ」が起動します。
+Launch the program to open Choi Memo II.
 
-- 左側のウィンドウがメモリストです。初期状態では `default` メモがあります。
-- 右側のウィンドウがメモ入力欄です。
+- The window on the left is the memo list. A `default` memo is included initially.
+- The window on the right is the memo editor.
 
-### (1) メモの追加
+### (1) Add a Memo
 
-メモリストの上にある一行入力欄に、追加したいメモ名を入力します。
+Enter the name of the memo you want to add in the single-line field above the memo list.
 
-その後、`[new]` ボタンを押すと、新しいメモが登録されます。
+Then click the `[new]` button to add the memo.
 
-また、メモリスト上で左クリックするとポップアップメニューが表示されますので、`[new]` を選択して新しいメモを登録することもできます。
+You can also left-click the memo list to open its pop-up menu, then select `[new]` to add a memo.
 
-### (2) メモの削除
+### (2) Delete a Memo
 
-削除したいメモをメモリストから選択し、`[del]` ボタンを押すと、選択したメモが削除されます。
+Select the memo you want to delete in the memo list, then click `[del]`.
 
-また、メモリスト上で左クリックするとポップアップメニューが表示されますので、`[del]` を選択して削除することもできます。
+You can also left-click the memo list to open its pop-up menu, then select `[del]`.
 
-> **注意:** すべてのメモを削除することはできません。
+> **Note:** You cannot delete all memos.
 
-### (3) メモ名の変更
+### (3) Rename a Memo
 
-メモリストの上にある一行入力欄に、変更したいメモ名を入力します。
+Enter the new name in the single-line field above the memo list.
 
-その後、`[ren]` ボタンを押すと、メモ名が変更されます。
+Then click `[ren]` to rename the memo.
 
-また、メモリスト上で左クリックするとポップアップメニューが表示されますので、`[rename]` を選択して変更することもできます。
+You can also left-click the memo list to open its pop-up menu, then select `[rename]`.
 
-### (4) メモを上に移動
+### (4) Move a Memo Up
 
-メモリストで、移動したいメモを選択し、`[↑]` ボタンを押すと、メモを上に移動できます。
+Select a memo in the list and click `[↑]` to move it up.
 
-### (5) メモを下に移動
+### (5) Move a Memo Down
 
-メモリストで、移動したいメモを選択し、`[↓]` ボタンを押すと、メモを下に移動できます。
+Select a memo in the list and click `[↓]` to move it down.
 
-### (6) ファイル名の取得
+### (6) Insert a File Name
 
-ファイルをメモにドラッグ＆ドロップすると、ファイル名がメモに入力されます。
+Drag and drop a file into a memo to insert its name.
 
-### (7) メモをタスクトレイに閉じる
+### (7) Minimize the Memo to the System Tray
 
-メモ上でダブルクリックすると、メモがタスクトレイに格納されます。
+Double-click a memo to minimize it to the system tray.
 
-タスクトレイのアイコンを左クリックするとメモが開き、もう一度左クリックするとタスクトレイに格納されます。
+Left-click the system tray icon to open the memo. Left-click it again to minimize the memo to the tray.
 
-### (8) メモ上で左クリックしたときのポップアップメニュー
+### (8) Pop-Up Menu in a Memo
 
-| メニュー | 説明 |
+| Menu | Description |
 |---|---|
-| `[copy]` | 選択した文字をクリップボードにコピーします。 |
-| `[paste]` | クリップボードから文字を貼り付けます。 |
-| `[cut]` | 選択した文字をクリップボードにコピーし、選択した文字を削除します。 |
-| `[undo]` | 直前の修正を取り消します。 |
-| `[clear]` | メモの内容をすべて削除します。 |
-| `[return->crlf]` | CRのみで改行されている場合に選択すると、改行を正しい形式に変換します。 |
-| `[setting]` | 設定メニューを表示します。 |
-| `[all memo save]` | すべてのメモの内容をファイルに保存します。 |
-| `[all memo load]` | ファイルに保存したメモの内容を読み出します。 |
-| `[back color (list)]` | メモリストウィンドウの背景色を選択します。 |
-| `[back color (memo)]` | メモウィンドウの背景色を選択します。 |
-| `[font (list)]` | メモリストウィンドウのフォントを選択します。 |
-| `[font (memo)]` | メモウィンドウのフォントを選択します。 |
-| `[version]` | バージョンを表示します。 |
+| `[copy]` | Copies the selected text to the clipboard. |
+| `[paste]` | Pastes text from the clipboard. |
+| `[cut]` | Copies the selected text to the clipboard and deletes it from the memo. |
+| `[undo]` | Reverses the most recent edit. |
+| `[clear]` | Deletes all memo contents. |
+| `[return->crlf]` | Select this to convert line breaks to the correct format when they use CR only. |
+| `[setting]` | Opens the settings menu. |
+| `[all memo save]` | Saves all memo contents to a file. |
+| `[all memo load]` | Loads memo contents saved in a file. |
+| `[back color (list)]` | Selects the memo list window's background color. |
+| `[back color (memo)]` | Selects the memo window's background color. |
+| `[font (list)]` | Selects the memo list window's font. |
+| `[font (memo)]` | Selects the memo window's font. |
+| `[version]` | Displays the version. |
 
-#### `[setting]` のサブメニュー
+#### `[setting]` Submenu
 
-| メニュー | 説明 |
+| Menu | Description |
 |---|---|
-| `[list]` | メモリストを表示／非表示にします。 |
-| `[on top stay]` | ウィンドウを常に最前面に表示するかどうかを選択します。 |
-| `[file name only]` | ファイルをドラッグ＆ドロップしたとき、フルパスを入力するか、ファイル名のみを入力するかを選択します。 |
+| `[list]` | Shows or hides the memo list. |
+| `[on top stay]` | Sets whether the window stays on top of other windows. |
+| `[file name only]` | Sets whether dropping a file inserts its full path or only its file name. |
 
-### (9) タスクトレイの左クリックで表示されるポップアップメニュー
+### (9) Pop-Up Menu Opened by Left-Clicking the System Tray Icon
 
-| メニュー | 説明 |
+| Menu | Description |
 |---|---|
-| `[Show]` | プログラムを表示します。 |
-| `[Exit]` | プログラムを終了します。 |
+| `[Show]` | Shows the program. |
+| `[Exit]` | Exits the program. |
 
-### (10) メモ上部のボタン
+### (10) Buttons Above the Memo
 
-| ボタン | 説明 |
+| Button | Description |
 |---|---|
-| `[home]` | メモリストの一番上に移動します。メモリストは非表示になります。 |
-| `[list]` | メモリストの表示／非表示を切り替えます。 |
-| `[<<]` | メモリストの前のメモを表示します。 |
-| `[>>]` | メモリストの次のメモを表示します。 |
+| `[home]` | Moves to the top of the memo list. The memo list is hidden. |
+| `[list]` | Shows or hides the memo list. |
+| `[<<]` | Shows the previous memo in the list. |
+| `[>>]` | Shows the next memo in the list. |
 
-## 3. リモート実行
+## 3. Remote Control
 
-外部プログラムから「ちょいメモⅡ」を操作する機能です。
+This feature lets you control Choi Memo II from an external program.
 
-付属のコンソールプログラム `cmemo_remote.exe` を使用して実行します。
+Use the included console program, `cmemo_remote.exe`.
 
-### (1) メモを表示する
+### (1) Display a Memo
 
 ```text
-cmemo_remote.exe メモ名 メッセージ
+cmemo_remote.exe memo_name message
 ```
 
-※ 改行には `\n` を使用してください。
+Use `\n` for a line break.
 
-**例:**
+**Examples:**
 
 ```text
-cmemo_remote.exe memo1 時間ですよ!!
-cmemo_remote.exe memo1 "  時間ですよ!!\n お昼です。"
+cmemo_remote.exe memo1 It's time!!
+cmemo_remote.exe memo1 "  It's time!!\n It's lunchtime."
 ```
 
-### (2) メモをタスクトレイに閉じる
+### (2) Minimize the Memo to the System Tray
 
 ```text
 cmemo_remote.exe -c
 ```
 
-### (3) メモの内容をすべてファイルに保存する
+### (3) Save All Memo Contents to a File
 
 ```text
-cmemo_remote.exe -s ファイル名
+cmemo_remote.exe -s filename
 ```
 
-**例:**
+**Example:**
 
 ```text
-cmemo_remote.exe -s "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+cmemo_remote.exe -s "C:\Documents and Settings\aaa\Desktop\sv.csv"
 ```
 
-### (4) ファイルに保存したメモの内容を読み出す
+### (4) Load Memo Contents from a File
 
 ```text
-cmemo_remote.exe -l ファイル名
+cmemo_remote.exe -l filename
 ```
 
-**例:**
+**Example:**
 
 ```text
-cmemo_remote.exe -l "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+cmemo_remote.exe -l "C:\Documents and Settings\aaa\Desktop\sv.csv"
 ```
 
-## 4. 履歴
+## 4. Version History
 
-| バージョン | 内容 |
+| Version | Changes |
 |---|---|
-| Ver 0.92 | 初公開 |
-| Ver 0.93 | デザイン変更 |
-| Ver 0.94 | メモの保存・読み出し機能を追加 |
-| Ver 0.95 | フォントと背景色の指定を、リストとメモそれぞれに分離。リストを閉じるボタンを追加 |
-| Ver 0.96 | デザイン変更。タスクバーに表示しないように変更。フォント設定、背景色設定のバグを修正 |
-| Ver 0.97 | メモにスクロールバーを追加 |
-| Ver 0.98 | `[<<]`、`[>>]` で移動した際に、現在のメモを保存し忘れるバグを修正 |
-| Ver 0.99 | `[home]` を追加 |
-| Ver 0.99a | インストーラーの圧縮方式を変更 |
+| Ver 0.92 | Initial release. |
+| Ver 0.93 | Updated the design. |
+| Ver 0.94 | Added memo saving and loading. |
+| Ver 0.95 | Separated font and background color settings for the list and memo. Added a button to close the list. |
+| Ver 0.96 | Updated the design, hid the program from the taskbar, and fixed bugs in font and background color settings. |
+| Ver 0.97 | Added a scrollbar to memos. |
+| Ver 0.98 | Fixed a bug that could lose changes to the current memo when navigating with `[<<]` or `[>>]`. |
+| Ver 0.99 | Added `[home]`. |
+| Ver 0.99a | Changed the installer's compression method. |

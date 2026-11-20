@@ -1,6 +1,6 @@
 <!-- cmemo is a lightweight memo pad and note-taking application for Windows 10 and Windows 11. -->
 <!-- It runs in the system tray, supports multiple memos, drag and drop, automatic saving, and remote control. -->
-<!-- Windows向けの軽量なメモ帳「cmemo（ちょいメモⅡ）」。タスクトレイに常駐し、複数のメモを管理できる無料のオープンソース・メモアプリです。 -->
+[[japanese]](https://github.com/sky-seeker99/cmemo/blob/main/README_jp.md)
 
 # <img width="290" height="94" alt="cmemo2-2_s" src="https://github.com/user-attachments/assets/6d105a97-e91b-4164-a0f2-ea21d2987ee7" />
 
@@ -8,203 +8,201 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 ![Language](https://img.shields.io/badge/language-C%2B%2B-orange.svg)
 
-**Windowsのタスクトレイに常駐して使える、軽量なメモ帳です。**
+**A lightweight memo pad that stays in the Windows system tray.**
 
-ちょっとしたメモを取りたいときに、デスクトップを圧迫せず、必要なときにすぐ呼び出して使えます。
-「もう一枚の付箋」のような感覚で利用できる、シンプルなメモツールです。
+Jot down quick notes without taking up desktop space, and bring the memo window up whenever you need it. It is a simple note-taking tool that feels like having one more sticky note.
 
-## 特徴
+## Features
 
-- 🗂️ **タスクトレイに常駐**
-  - 普段はタスクトレイに収納しておき、必要なときだけ呼び出せます。
-- 🖱️ **左クリックで開閉**
-  - タスクトレイのアイコンを左クリックするとメモが開き、もう一度左クリックするとタスクトレイに戻ります。
-- 💾 **自動保存**
-  - プログラム終了時にメモの内容をファイルへ保存します。
-  - 次回起動時には、前回の内容を引き続き編集できます。
-- 📝 **複数のメモを管理**
-  - 複数のメモを作成し、用途ごとに切り替えて使用できます。
-- 📁 **ファイル名の取得**
-  - ファイルをメモへドラッグ＆ドロップすると、ファイル名をメモに入力できます。
-- ⚙️ **各種設定**
-  - メモリストやメモの背景色・フォント、常に最前面に表示する設定などを変更できます。
-- 💻 **リモート操作**
-  - 付属の `cmemo_remote.exe` を使用して、外部プログラムからメモの表示・保存・読み出しなどを操作できます。
+- 🗂️ **Stays in the system tray**
+  - Keep the app in the system tray and open it only when needed.
+- 🖱️ **Toggle with a left-click**
+  - Left-click the system tray icon to open the memo; left-click again to return it to the tray.
+- 💾 **Automatic saving**
+  - Memo contents are saved to a file when the program exits.
+  - Continue editing your previous notes the next time you launch the program.
+- 📝 **Manage multiple memos**
+  - Create multiple memos and switch between them for different purposes.
+- 📁 **Insert file names**
+  - Drag and drop a file into a memo to insert its name.
+- ⚙️ **Various settings**
+  - Configure the memo list, memo background colors and fonts, and whether windows stay on top.
+- 💻 **Remote control**
+  - Use the included `cmemo_remote.exe` to show, save, and read memos from an external program.
 
-## 動作環境
+## System Requirements
 
 - Windows 10 / 11
 
-## ダウンロード
+## Download
 
 - [choi_memo2_099.zip](https://github.com/sky-seeker99/cmemo/releases/download/ver0.99_20260920/choi_memo2_099.zip)
 
-## インストール
+## Installation
 
-現在のリポジトリには、ソースコードとプロジェクトファイルが含まれています。
+This repository currently contains the source code and project files.
 
-実行ファイルを使用する場合は、利用可能なリリースや配布ファイルをご確認ください。
+To use the executable, check the available releases or distribution packages.
 
-## 基本的な使い方
+## Basic Usage
 
-1. `cmemo` を起動します。
-2. タスクトレイにアイコンが表示されます。
-3. タスクトレイのアイコンを左クリックすると、メモが表示されます。
-4. メモを入力します。
-5. もう一度タスクトレイのアイコンを左クリックすると、メモがタスクトレイに戻ります。
-6. プログラムを終了すると、メモの内容がファイルに保存されます。
-7. 次回起動すると、保存されたメモの内容を引き続き使用できます。
+1. Launch `cmemo`.
+2. The icon appears in the system tray.
+3. Left-click the system tray icon to show the memo.
+4. Enter your notes.
+5. Left-click the system tray icon again to return the memo to the tray.
+6. When you exit the program, the memo contents are saved to a file.
+7. The next time you launch the program, you can continue using the saved notes.
 
-## メモの管理
+## Managing Memos
 
-### メモの追加
+### Add a Memo
 
-メモリスト上部の一行入力欄にメモ名を入力し、`[new]` ボタンを押します。
+Enter a memo name in the single-line field above the memo list, then click the `[new]` button.
 
-また、メモリスト上で左クリックしてポップアップメニューを表示し、`[new]` を選択して追加することもできます。
+You can also left-click the memo list to open its pop-up menu and select `[new]`.
 
-### メモの削除
+### Delete a Memo
 
-削除したいメモを選択し、`[del]` ボタンを押します。
+Select the memo you want to delete and click the `[del]` button.
 
-ポップアップメニューの `[del]` から削除することもできます。
+You can also delete a memo using `[del]` in the pop-up menu.
 
-> **注意:** すべてのメモを削除することはできません。
+> **Note:** You cannot delete all memos.
 
-### メモ名の変更
+### Rename a Memo
 
-メモリスト上部の一行入力欄に変更後のメモ名を入力し、`[ren]` ボタンを押します。
+Enter the new memo name in the single-line field above the memo list, then click `[ren]`.
 
-ポップアップメニューの `[rename]` から変更することもできます。
+You can also rename a memo using `[rename]` in the pop-up menu.
 
-### メモの並べ替え
+### Reorder Memos
 
-- `[↑]` ボタン：選択したメモを上へ移動
-- `[↓]` ボタン：選択したメモを下へ移動
+- `[↑]` button: Move the selected memo up.
+- `[↓]` button: Move the selected memo down.
 
-## メモのポップアップメニュー
+## Memo Pop-Up Menu
 
-メモ上で左クリックすると、次のメニューを使用できます。
+Left-click in a memo to use the following menu items:
 
-| メニュー | 内容 |
+| Menu | Description |
 |---|---|
-| `[copy]` | 選択した文字をクリップボードにコピーします。 |
-| `[paste]` | クリップボードから文字を貼り付けます。 |
-| `[cut]` | 選択した文字をクリップボードにコピーし、選択した文字を削除します。 |
-| `[undo]` | 直前の修正を取り消します。 |
-| `[clear]` | メモの内容をすべて削除します。 |
-| `[return->crlf]` | CRのみで改行されている場合に、改行を正しい形式に変換します。 |
-| `[setting]` | 各種設定メニューを表示します。 |
-| `[all memo save]` | すべてのメモの内容をファイルに保存します。 |
-| `[all memo load]` | ファイルに保存したメモの内容を読み出します。 |
-| `[back color (list)]` | メモリストの背景色を設定します。 |
-| `[back color (memo)]` | メモの背景色を設定します。 |
-| `[font (list)]` | メモリストのフォントを設定します。 |
-| `[font (memo)]` | メモのフォントを設定します。 |
-| `[version]` | バージョンを表示します。 |
+| `[copy]` | Copies the selected text to the clipboard. |
+| `[paste]` | Pastes text from the clipboard. |
+| `[cut]` | Copies the selected text to the clipboard and deletes it from the memo. |
+| `[undo]` | Reverses the most recent edit. |
+| `[clear]` | Deletes all memo contents. |
+| `[return->crlf]` | Converts line breaks to the correct format if they use CR only. |
+| `[setting]` | Opens the settings menu. |
+| `[all memo save]` | Saves all memo contents to a file. |
+| `[all memo load]` | Loads memo contents saved in a file. |
+| `[back color (list)]` | Sets the memo list background color. |
+| `[back color (memo)]` | Sets the memo background color. |
+| `[font (list)]` | Sets the memo list font. |
+| `[font (memo)]` | Sets the memo font. |
+| `[version]` | Displays the version. |
 
-### `[setting]` のサブメニュー
+### `[setting]` Submenu
 
-| メニュー | 内容 |
+| Menu | Description |
 |---|---|
-| `[list]` | メモリストの表示／非表示を切り替えます。 |
-| `[on top stay]` | ウィンドウを常に最前面に表示するかどうかを設定します。 |
-| `[file name only]` | ファイルをドラッグ＆ドロップしたとき、フルパスを入力するか、ファイル名のみを入力するかを設定します。 |
+| `[list]` | Shows or hides the memo list. |
+| `[on top stay]` | Sets whether the window stays on top of other windows. |
+| `[file name only]` | Sets whether dropping a file inserts its full path or only its file name. |
 
-## タスクトレイのメニュー
+## System Tray Menu
 
-タスクトレイのアイコンを左クリックすると、次のメニューを使用できます。
+Left-click the system tray icon to use the following menu items:
 
-| メニュー | 内容 |
+| Menu | Description |
 |---|---|
-| `[Show]` | プログラムを表示します。 |
-| `[Exit]` | プログラムを終了します。 |
+| `[Show]` | Shows the program. |
+| `[Exit]` | Exits the program. |
 
-## メモ上部のボタン
+## Buttons Above the Memo
 
-| ボタン | 内容 |
+| Button | Description |
 |---|---|
-| `[home]` | メモリストの一番上に移動します。メモリストは非表示になります。 |
-| `[list]` | メモリストの表示／非表示を切り替えます。 |
-| `[<<]` | メモリストの前のメモを表示します。 |
-| `[>>]` | メモリストの次のメモを表示します。 |
+| `[home]` | Moves to the top of the memo list. The memo list is hidden. |
+| `[list]` | Shows or hides the memo list. |
+| `[<<]` | Shows the previous memo in the list. |
+| `[>>]` | Shows the next memo in the list. |
 
-## ファイル名の取得
+## Insert File Names
 
-ファイルをメモへドラッグ＆ドロップすると、ファイル名がメモに入力されます。
+Drag and drop a file into a memo to insert its name.
 
-設定によって、フルパスまたはファイル名のみを入力できます。
+Depending on the settings, you can insert either the full path or only the file name.
 
-## リモート実行
+## Remote Control
 
-外部プログラムから `cmemo` を操作できます。
+You can control `cmemo` from an external program.
 
-付属のコンソールプログラム `cmemo_remote.exe` を使用します。
+Use the included console program, `cmemo_remote.exe`.
 
-### メモを表示
+### Show a Memo
 
 ```text
-cmemo_remote.exe メモ名 メッセージ
+cmemo_remote.exe memo_name message
 ```
 
-改行には `\n` を使用してください。
+Use `\n` for a line break.
 
-例：
+Example:
 
 ```text
-cmemo_remote.exe memo1 時間ですよ!!
-cmemo_remote.exe memo1 "  時間ですよ!!\n お昼です。"
+cmemo_remote.exe memo1 It's time!
+cmemo_remote.exe memo1 "  It's time!\n It's lunchtime."
 ```
 
-### メモをタスクトレイに閉じる
+### Minimize All Memos to the System Tray
 
 ```text
 cmemo_remote.exe -c
 ```
 
-### すべてのメモをファイルに保存
+### Save All Memos to a File
 
 ```text
-cmemo_remote.exe -s ファイル名
+cmemo_remote.exe -s filename
 ```
 
-例：
+Example:
 
 ```text
-cmemo_remote.exe -s "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+cmemo_remote.exe -s "C:\Documents and Settings\aaa\Desktop\sv.csv"
 ```
 
-### ファイルからメモを読み出す
+### Load Memos from a File
 
 ```text
-cmemo_remote.exe -l ファイル名
+cmemo_remote.exe -l filename
 ```
 
-例：
+Example:
 
 ```text
-cmemo_remote.exe -l "C:\Documents and Settings\aaa\デスクトップ\sv.csv"
+cmemo_remote.exe -l "C:\Documents and Settings\aaa\Desktop\sv.csv"
 ```
 
-## バージョン履歴
+## Version History
 
-| バージョン | 内容 |
+| Version | Changes |
 |---|---|
-| Ver 0.92 | 初公開 |
-| Ver 0.93 | デザイン変更 |
-| Ver 0.94 | メモの保存・読み出し機能を追加 |
-| Ver 0.95 | フォントと背景色の指定を、リストとメモそれぞれに分離。リストを閉じるボタンを追加 |
-| Ver 0.96 | デザイン変更。タスクバーに表示しないように変更。フォント設定、背景色設定のバグを修正 |
-| Ver 0.97 | メモにスクロールバーを追加 |
-| Ver 0.98 | `[<<]`、`[>>]` で移動した際に、現在のメモを保存し忘れるバグを修正 |
-| Ver 0.99 | `[home]` を追加 |
-| Ver 0.99a | インストーラーの圧縮方式を変更 |
+| Ver 0.92 | Initial release. |
+| Ver 0.93 | Updated the design. |
+| Ver 0.94 | Added memo saving and loading. |
+| Ver 0.95 | Separated font and background color settings for the list and memo. Added a button to close the list. |
+| Ver 0.96 | Updated the design, hid the program from the taskbar, and fixed bugs in font and background color settings. |
+| Ver 0.97 | Added a scrollbar to memos. |
+| Ver 0.98 | Fixed a bug that could lose changes to the current memo when navigating with `[<<]` or `[>>]`. |
+| Ver 0.99 | Added `[home]`. |
+| Ver 0.99a | Changed the installer's compression method. |
 
-## ライセンス
+## License
 
-このプロジェクトは **Apache License Version 2.0** のもとで公開されています。
+This project is distributed under the **Apache License Version 2.0**.
 
 ## Issues / Contributing
 
-バグ報告、機能要望、改善提案などがありましたら、GitHubのIssuesをご利用ください。
-
+Please use GitHub Issues to report bugs, request features, or suggest improvements.
